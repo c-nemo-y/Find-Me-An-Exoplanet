@@ -145,7 +145,7 @@
     (?*gVarDistanceParentStar* addTerm "veryFar" "very far") 
     
     ;Size of planet
- 	  (bind ?xBig (create$ 2 500))
+    (bind ?xBig (create$ 2 500))
     (bind ?yBig (create$ 0.0 1.0))
     (?*gVarSize* addTerm "big" ?xBig ?yBig 2)
     (bind ?xSmall (create$ 0 2))
@@ -196,8 +196,8 @@
     (printout t "------------Welcome to find me an ExoPlanet------------" crlf)
     (printout t "Do you not know a lot about astronomy and still want to find that particular planet?" crlf)
     (printout t "Well then this system is just for you." crlf)
-   	(printout t "Type your name and press <Enter>: ")
-	  (bind ?name (read))
+    (printout t "Type your name and press <Enter>: ")
+    (bind ?name (read))
     (printout t "Hello "?name crlf)
     (printout t "Answer the following questions which will help us understand what your requirements" crlf)
 )
@@ -234,8 +234,8 @@
 
 ;Suggestion 1
 (defrule ProximaCentaurib
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
-	  (valTemperature ?t&: (fuzzy-match ?t "more_or_less cold"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
+    (valTemperature ?t&: (fuzzy-match ?t "more_or_less cold"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "more_or_less closeBy"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less medium"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "old"))
@@ -252,8 +252,8 @@
 
 ;Suggestion 2
 (defrule SWEEPS-11
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "veryFar"))
-	  (valTemperature ?t&: (fuzzy-match ?t "hot"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "veryFar"))
+    (valTemperature ?t&: (fuzzy-match ?t "hot"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "more_or_less closeBy"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less big"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "old"))
@@ -270,8 +270,8 @@
 
 ;Suggestion 3
 (defrule HAT-P-32b
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less veryFar"))
-	(valTemperature ?t&: (fuzzy-match ?t "veryHot"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less veryFar"))
+    (valTemperature ?t&: (fuzzy-match ?t "veryHot"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "more_or_less closeBy"))
     (valSize ?vS&: (fuzzy-match ?vS "very big"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "new"))
@@ -288,8 +288,8 @@
 
 ;Suggestion 4
 (defrule Wolf1061c
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
-	  (valTemperature ?t&: (fuzzy-match ?t "more_or_less cold"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
+    (valTemperature ?t&: (fuzzy-match ?t "more_or_less cold"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "more_or_less far"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less small"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "new"))
@@ -306,8 +306,8 @@
 
 ;Suggestion 5
 (defrule Kepler186f
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
-	  (valTemperature ?t&: (fuzzy-match ?t "cold"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
+    (valTemperature ?t&: (fuzzy-match ?t "cold"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "more_or_less veryFar"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less medium"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "new"))
@@ -324,8 +324,8 @@
 
 ;Suggestion 6
 (defrule Kepler438b
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
-	  (valTemperature ?t&: (fuzzy-match ?t "more_or_less warm"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
+    (valTemperature ?t&: (fuzzy-match ?t "more_or_less warm"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "more_or_less far"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less small"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "new"))
@@ -342,8 +342,8 @@
 
 ;Suggestion 7
 (defrule GJ163c
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
-  	(valTemperature ?t&: (fuzzy-match ?t "cold"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less closeBy"))
+    (valTemperature ?t&: (fuzzy-match ?t "cold"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "closeBy"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less medium"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "new"))
@@ -360,8 +360,8 @@
 
 ;Suggestion 8
 (defrule Kepler440b
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less far"))
-  	(valTemperature ?t&: (fuzzy-match ?t "warm"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less far"))
+    (valTemperature ?t&: (fuzzy-match ?t "warm"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "far"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less medium"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "new"))
@@ -378,8 +378,8 @@
 
 ;Suggestion 9
 (defrule Kepler70b
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less veryFar"))
-  	(valTemperature ?t&: (fuzzy-match ?t "very hot"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "more_or_less veryFar"))
+    (valTemperature ?t&: (fuzzy-match ?t "very hot"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "very closeBy"))
     (valSize ?vS&: (fuzzy-match ?vS "very small"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "new"))
@@ -396,8 +396,8 @@
 
 ;Suggestion 10
 (defrule OGLE-2005-BLG-390Lb
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "very veryFar"))
-	  (valTemperature ?t&: (fuzzy-match ?t "very veryCold"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "very veryFar"))
+    (valTemperature ?t&: (fuzzy-match ?t "very veryCold"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "very veryFar"))
     (valSize ?vS&: (fuzzy-match ?vS "more_or_less medium"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "old"))
@@ -414,7 +414,7 @@
 
 ;Suggestion 11
 (defrule HD100546b
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "closeBy"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "closeBy"))
     (valTemperature ?t&: (fuzzy-match ?t "very hot"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "very veryFar"))
     (valSize ?vS&: (fuzzy-match ?vS "very big"))
@@ -432,8 +432,8 @@
 
 ;Suggestion 12
 (defrule HR8799b
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "closeBy"))
-  	(valTemperature ?t&: (fuzzy-match ?t "very hot"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "closeBy"))
+    (valTemperature ?t&: (fuzzy-match ?t "very hot"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "very veryFar"))
     (valSize ?vS&: (fuzzy-match ?vS "big"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "old"))
@@ -450,8 +450,8 @@
 
 ;Suggestion 13
 (defrule HD40307c
-  	(valDistanceFromEarth ?dE&: (fuzzy-match ?dE "closeBy"))
-	  (valTemperature ?t&: (fuzzy-match ?t "hot"))
+    (valDistanceFromEarth ?dE&: (fuzzy-match ?dE "closeBy"))
+    (valTemperature ?t&: (fuzzy-match ?t "hot"))
     (valDistanceParentStar ?dP&: (fuzzy-match ?dP "closeBy"))
     (valSize ?vS&: (fuzzy-match ?vS "big"))
     (valDiscovery ?dT&: (fuzzy-match ?dT "old"))
